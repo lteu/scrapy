@@ -8,8 +8,10 @@ class ExampleSpider(scrapy.Spider):
     start_urls = ['http://www.corriere.it/']
 
     def parse(self, response):
-        response.css("")
+        # response.css("")
+        pass
 
 
     def cleanUrls(urls):
+    	pass
 

@@ -61,7 +61,7 @@ class AvgSpider(scrapy.Spider):
                 
 
                 # filter
-                if 'nuda' not in text and 'nudo' not in text and 'asta' not in text:
+                if 'nuda' not in text and 'nudo' not in text and 'asta' not in text and 'Lotto' not in text and 'lotto' not in text:
                     if mq.strip() != '' and price.strip() != '':
                         logging.info(price+' '+mq+' page_counter:'+str(page_counter) + ' c:'+str(c))
                         mq_price = float(price)/float(mq)

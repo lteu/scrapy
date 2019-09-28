@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'casa.spiders'
 
 # LOG_ENABLED = False
 # LOG_LEVEL='INFO'
-LOG_LEVEL='WARNING'
+# LOG_LEVEL='WARNING'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'casa (+http://www.yourdomain.com)'

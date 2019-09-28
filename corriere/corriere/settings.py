@@ -17,9 +17,16 @@ NEWSPIDER_MODULE = 'corriere.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'corriere (+http://www.yourdomain.com)'
+LOG_LEVEL='INFO'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
+
+HTTPERROR_ALLOWED_CODES = [404,400] 
+
+DEPTH_PRIORITY = 1
+SCHEDULER_DISK_QUEUE = 'scrapy.squeues.PickleFifoDiskQueue'
+SCHEDULER_MEMORY_QUEUE = 'scrapy.squeues.FifoMemoryQueue'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

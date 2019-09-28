@@ -3,7 +3,7 @@ import scrapy
 
 
 class ExampleSpider(scrapy.Spider):
-    name = 'example'
+    name = 'example2'
     allowed_domains = ['www.corriere.it']
     start_urls = [
     	# 'https://www.corriere.it/opinioni/19_settembre_16/i-falsi-miti-caduti-donald-trump-caf7973e-d8b7-11e9-a64f-042100a6f996.shtml/',
@@ -14,9 +14,11 @@ class ExampleSpider(scrapy.Spider):
 
 
     def parse(self, response):
+        pass
         # response.css("")
-        response.xpath('//span[@itemprop="articleBody"]/text()').getall()
+        # response.xpath('//span[@itemprop="articleBody"]/text()').getall()
 
 
     def cleanUrls(urls):
+        pass
 
